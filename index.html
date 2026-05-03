@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document metadata -->
+  <meta charset="UTF-8" />
+  <!-- Viewport meta tag: essential for mobile-responsive rendering -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IT 3203 project website on SEO in Web Development." />
+  <title>SEO in Web Development | Home</title>
+  <!-- Single external stylesheet for all pages -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ Site Header ════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="container">
+      <h1>SEO in Web Development</h1>
+      <p class="tagline">IT 3203 Project Milestone #3 &bull; Responsive and Mobile Web Design</p>
+    </div>
+  </header>
+
+  <!-- ══ Navigation ═════════════════════════════════════════════
+       Mobile: hamburger button toggles .nav-links panel (see script.js).
+       Tablet+: hamburger hidden, links display as horizontal row (see style.css @media 650px).
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <!-- Hamburger toggle – visible on mobile only -->
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu">&#9776;</button>
+      <!-- Nav links panel -->
+      <div id="nav-links" class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="topic1.html">On-Page SEO</a>
+        <a href="topic2.html">Technical SEO</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ Main Content ═══════════════════════════════════════════ -->
+  <main>
+    <div class="container">
+
+      <!-- Hero card with feature image -->
+      <section class="card highlight">
+        <h2>What Is SEO?</h2>
+        <p>
+          <strong>Search Engine Optimization (SEO)</strong> is the practice of improving a website so that
+          search engines can discover, understand, and rank it more effectively.
+          Good SEO combines well-written content, clean semantic HTML, fast page loads,
+          mobile-friendly design, and secure HTTPS connections.
+        </p>
+        <p>
+          This project explores how web developers can apply SEO principles while building websites —
+          from choosing meaningful headings to writing descriptive alt text and optimizing page performance.
+        </p>
+        <!-- Fluid responsive image -->
+        <img src="assets/seo-illustration.svg"
+             alt="Illustration of a web browser with a magnifying glass representing search engine optimization"
+             class="feature-image hero-svg" />
+      </section>
+
+      <!-- Two-column info grid -->
+      <div class="grid-2">
+        <article class="card">
+          <h2>Key Terms</h2>
+          <ul>
+            <li>Search engine crawling</li>
+            <li>Keywords and search intent</li>
+            <li>Metadata (title, description)</li>
+            <li>Alt text for images</li>
+            <li>Page load speed</li>
+            <li>Responsive / mobile design</li>
+            <li>Semantic HTML structure</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Table of Contents</h2>
+          <ol>
+            <li><a href="topic1.html">On-Page SEO</a></li>
+            <li><a href="topic2.html">Technical SEO</a></li>
+            <li><a href="concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References &amp; Resources</a></li>
+            <li><a href="quiz.html">SEO Quiz</a></li>
+            <li><a href="about.html">About the Author</a></li>
+          </ol>
+        </article>
+      </div>
+
+      <!-- Why SEO matters -->
+      <section class="card">
+        <h2>Why SEO Matters for Web Developers</h2>
+        <p>
+          SEO is not just a marketing tool — it is a set of web development best practices.
+          A page with semantic markup, descriptive links, responsive layout, and fast load times
+          will perform better in search results and provide a better experience for all users.
+          Developers who understand SEO write better code and build more useful websites.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ══ Footer ═════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <p>
+        This website was created for a class project in IT 3203. &nbsp;|&nbsp;
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">IT 3203 Class Website</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Single external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
