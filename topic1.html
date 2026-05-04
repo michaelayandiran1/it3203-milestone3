@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about On-Page SEO techniques including headings, keywords, internal links, and alt text." />
+  <title>SEO in Web Development | On-Page SEO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>SEO in Web Development</h1>
+      <p class="tagline">IT 3203 Project Milestone #3 &bull; Responsive and Mobile Web Design</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="topic1.html" class="active">On-Page SEO</a>
+        <a href="topic2.html">Technical SEO</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Introduction -->
+      <section class="card highlight">
+        <h2>On-Page SEO</h2>
+        <p>
+          On-page SEO refers to the optimizations made directly on a webpage — its content, structure, and HTML —
+          to help search engines understand what the page is about and help visitors find what they are looking for.
+          Unlike technical SEO (which focuses on server and site-level settings), on-page SEO is about the words,
+          headings, images, and links that appear on the page itself.
+        </p>
+      </section>
+
+      <!-- Topic cards grid -->
+      <section class="topic-grid" aria-label="On-Page SEO topics">
+
+        <article class="card">
+          <h3>Headings and Content Structure</h3>
+          <p>
+            Every page should start with a single main heading (<span class="code-note">&lt;h1&gt;</span>)
+            that clearly identifies the topic. Subheadings (<span class="code-note">&lt;h2&gt;</span>,
+            <span class="code-note">&lt;h3&gt;</span>) organize the content into logical sections.
+            A clear heading hierarchy helps both users and search engines scan and understand the page.
+          </p>
+          <ul>
+            <li>Use only one <span class="code-note">&lt;h1&gt;</span> per page</li>
+            <li>Keep headings descriptive and meaningful</li>
+            <li>Do not skip heading levels (e.g. h1 → h3)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Keywords and Search Intent</h3>
+          <p>
+            Keywords are the words and phrases users type into a search engine.
+            Good on-page SEO identifies the primary keyword for each page and uses it naturally
+            in the title, first heading, and early paragraphs.
+          </p>
+          <ul>
+            <li>Write for the reader first, search engines second</li>
+            <li>Avoid "keyword stuffing" — forced repetition hurts readability</li>
+            <li>Include related terms to build topical depth</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Title Tags and Meta Descriptions</h3>
+          <p>
+            The <span class="code-note">&lt;title&gt;</span> tag appears in search results and browser tabs.
+            The meta description provides a brief summary shown under the title in search results.
+            Neither directly controls rankings, but both influence click-through rates.
+          </p>
+          <ul>
+            <li>Keep titles under 60 characters</li>
+            <li>Write meta descriptions of 150–160 characters</li>
+            <li>Make each page's title and description unique</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Images and Alt Text</h3>
+          <p>
+            Images support the content and improve user engagement.
+            The <span class="code-note">alt</span> attribute describes the image for screen readers
+            and for search engine crawlers that cannot "see" images.
+          </p>
+          <ul>
+            <li>Write concise, descriptive alt text</li>
+            <li>Avoid phrases like "image of" or "picture of"</li>
+            <li>Keep decorative images with empty alt (<span class="code-note">alt=""</span>)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Internal Links and Navigation</h3>
+          <p>
+            Internal links connect related pages within the same site.
+            They help users discover more content and help search engines understand
+            how pages are related to each other.
+          </p>
+          <ul>
+            <li>Use descriptive anchor text instead of "click here"</li>
+            <li>Link to related pages when it benefits the reader</li>
+            <li>Ensure every page is reachable from the main navigation</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>URL Structure</h3>
+          <p>
+            Clean, readable URLs help users understand where they are on a site.
+            Short, descriptive URLs are easier to share and are preferred by search engines.
+          </p>
+          <ul>
+            <li>Use lowercase letters and hyphens between words</li>
+            <li>Keep URLs short and descriptive (e.g., <span class="code-note">/on-page-seo</span>)</li>
+            <li>Avoid unnecessary parameters or numbers in URLs</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- Responsive table with .table-wrapper for horizontal scroll on small screens -->
+      <section class="card">
+        <h2>On-Page SEO Elements Summary</h2>
+        <div class="table-wrapper">
+          <table>
+            <caption>Common on-page SEO elements, their purpose, and best practices</caption>
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Where It Appears</th>
+                <th>Purpose</th>
+                <th>Best Practice</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Title tag</td>
+                <td>Browser tab &amp; search results</td>
+                <td>Identifies the page topic</td>
+                <td>Unique, under 60 characters</td>
+              </tr>
+              <tr>
+                <td>Meta description</td>
+                <td>Search result snippet</td>
+                <td>Summarizes page content</td>
+                <td>150–160 characters, compelling</td>
+              </tr>
+              <tr>
+                <td>H1 heading</td>
+                <td>Top of page content</td>
+                <td>Main topic signal</td>
+                <td>One per page, keyword-relevant</td>
+              </tr>
+              <tr>
+                <td>Alt text</td>
+                <td>Image attributes</td>
+                <td>Accessibility &amp; image context</td>
+                <td>Descriptive, no "image of…"</td>
+              </tr>
+              <tr>
+                <td>Internal links</td>
+                <td>Body content</td>
+                <td>Navigation &amp; topic connections</td>
+                <td>Descriptive anchor text</td>
+              </tr>
+              <tr>
+                <td>URL slug</td>
+                <td>Browser address bar</td>
+                <td>Page identity &amp; context</td>
+                <td>Short, lowercase, hyphenated</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        This website was created for a class project in IT 3203. &nbsp;|&nbsp;
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">IT 3203 Class Website</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

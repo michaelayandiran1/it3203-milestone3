@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Technical SEO: page speed, mobile responsiveness, HTTPS, semantic HTML, and crawlability." />
+  <title>SEO in Web Development | Technical SEO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>SEO in Web Development</h1>
+      <p class="tagline">IT 3203 Project Milestone #3 &bull; Responsive and Mobile Web Design</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="topic1.html">On-Page SEO</a>
+        <a href="topic2.html" class="active">Technical SEO</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Introduction -->
+      <section class="card highlight">
+        <h2>Technical SEO</h2>
+        <p>
+          Technical SEO focuses on how a website is built and configured, rather than its written content.
+          It ensures that search engines can access, crawl, and index pages efficiently, and that users get
+          a fast, secure, and reliable experience regardless of the device they use.
+          Developers play a central role in technical SEO because most of these factors live in the code.
+        </p>
+      </section>
+
+      <!-- Core topics grid -->
+      <section class="grid-2" aria-label="Technical SEO topics">
+
+        <article class="card">
+          <h3>Page Speed and Performance</h3>
+          <p>
+            Page speed is both a ranking factor and a user experience metric.
+            Google's Core Web Vitals measure loading time, interactivity, and visual stability.
+            Slow pages increase bounce rates, meaning users leave before the page finishes loading.
+          </p>
+          <ul>
+            <li>Compress and resize images before uploading</li>
+            <li>Minimize or combine CSS and JavaScript files</li>
+            <li>Use browser caching for repeat visitors</li>
+            <li>Reduce server response time</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Mobile Responsiveness</h3>
+          <p>
+            Google uses <strong>mobile-first indexing</strong>, which means it primarily reads the mobile
+            version of a website when deciding how to rank it.
+            A site that breaks or is hard to read on a phone will rank lower than one with a clean
+            responsive layout.
+          </p>
+          <ul>
+            <li>Use the viewport meta tag on every page</li>
+            <li>Design for small screens first (mobile-first approach)</li>
+            <li>Ensure text is readable without zooming</li>
+            <li>Make tap targets at least 44×44 pixels</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>HTTPS and Security</h3>
+          <p>
+            HTTPS (Hypertext Transfer Protocol Secure) encrypts data between the browser and server.
+            Google marks HTTP sites as "Not Secure" and gives a small ranking boost to HTTPS sites.
+            Security builds user trust and protects sensitive data.
+          </p>
+          <ul>
+            <li>Install and maintain an SSL/TLS certificate</li>
+            <li>Redirect all HTTP requests to HTTPS</li>
+            <li>Avoid mixed content (HTTP resources on HTTPS pages)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Semantic HTML and Clean Code</h3>
+          <p>
+            Semantic HTML uses elements that describe the meaning of content —
+            <span class="code-note">&lt;header&gt;</span>,
+            <span class="code-note">&lt;nav&gt;</span>,
+            <span class="code-note">&lt;main&gt;</span>,
+            <span class="code-note">&lt;article&gt;</span>,
+            <span class="code-note">&lt;footer&gt;</span>.
+            These help crawlers understand page structure and improve accessibility.
+          </p>
+          <ul>
+            <li>Use semantic elements instead of generic <span class="code-note">&lt;div&gt;</span> tags where appropriate</li>
+            <li>Validate HTML with the W3C validator</li>
+            <li>Avoid duplicate content across pages</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Crawlability and Site Architecture</h3>
+          <p>
+            Search engine bots (called crawlers or spiders) visit pages by following links.
+            A well-organized site with clear navigation makes it easier for crawlers to find and
+            index every page.
+          </p>
+          <ul>
+            <li>Every page should be reachable within three clicks from the home page</li>
+            <li>Create a sitemap.xml to help crawlers find all pages</li>
+            <li>Fix broken links (404 errors) promptly</li>
+            <li>Use <span class="code-note">robots.txt</span> to guide crawlers away from admin pages</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Core Web Vitals</h3>
+          <p>
+            Google introduced Core Web Vitals as official ranking signals. These measure three aspects
+            of page experience that affect real users.
+          </p>
+          <ul>
+            <li><strong>LCP</strong> (Largest Contentful Paint) — how fast the main content loads (goal: under 2.5 s)</li>
+            <li><strong>FID / INP</strong> (Interaction to Next Paint) — how quickly the page responds to input</li>
+            <li><strong>CLS</strong> (Cumulative Layout Shift) — how much content unexpectedly moves while loading</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- Developer checklist -->
+      <section class="card">
+        <h2>Technical SEO Developer Checklist</h2>
+        <div class="table-wrapper">
+          <table>
+            <caption>A practical checklist for technical SEO best practices</caption>
+            <thead>
+              <tr>
+                <th>Area</th>
+                <th>Action Item</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mobile</td>
+                <td>Add viewport meta tag to every page</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>Mobile</td>
+                <td>Test on real phone and at 375px width</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>Security</td>
+                <td>Serve site over HTTPS</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>Performance</td>
+                <td>Compress all images</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>Use semantic elements throughout</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>Validate with W3C Markup Validator</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>Navigation</td>
+                <td>Ensure all pages reachable from nav</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td>Links</td>
+                <td>Fix all broken links (404 errors)</td>
+                <td>Medium</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        This website was created for a class project in IT 3203. &nbsp;|&nbsp;
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">IT 3203 Class Website</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

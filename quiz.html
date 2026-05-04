@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Test your knowledge of SEO concepts with this five-question quiz." />
+  <title>SEO in Web Development | Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>SEO in Web Development</h1>
+      <p class="tagline">IT 3203 Project Milestone #3 &bull; Responsive and Mobile Web Design</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="topic1.html">On-Page SEO</a>
+        <a href="topic2.html">Technical SEO</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="quiz.html" class="active">Quiz</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Instructions -->
+      <section class="card highlight">
+        <h2>SEO Knowledge Quiz</h2>
+        <p>
+          Answer all five questions below, then click <strong>Submit Quiz</strong> to see your results.
+          A score of 3 or higher is a passing grade.
+        </p>
+      </section>
+
+      <!--
+        RESPONSIVE DESIGN NOTE – Quiz Form:
+        - All inputs use font-size: 1rem (16px+) to prevent iOS auto-zoom.
+        - Touch targets are min-height: 44px (Apple HIG minimum).
+        - Inputs are width: 100% to fill the container on any screen.
+        - Radio/checkbox labels are styled as full-width tap targets on mobile.
+        These rules are defined in style.css under "Quiz Form – Mobile Optimized".
+      -->
+      <div class="card" id="quiz-form" aria-label="SEO quiz form">
+        <div class="quiz-form">
+
+          <!-- Question 1: Fill-in-the-blank -->
+          <div class="question-block">
+            <label for="q1">1. The words and phrases that users type into a search engine are called ______.</label>
+            <input type="text" id="q1" name="q1"
+                   placeholder="Type your answer here"
+                   autocomplete="off"
+                   aria-required="true" />
+          </div>
+
+          <!-- Question 2: Single radio – what appears in search snippets -->
+          <div class="question-block">
+            <p style="font-weight:600; color:var(--clr-primary); margin-bottom:0.5rem;">
+              2. Which HTML element appears as the short summary text under a title in Google search results?
+            </p>
+            <div class="options">
+              <label class="option-label">
+                <input type="radio" name="q2" value="h1" /> H1 heading
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q2" value="meta" /> Meta description
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q2" value="footer" /> Footer text
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q2" value="nav" /> Navigation menu
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 3: Single radio – HTTPS -->
+          <div class="question-block">
+            <p style="font-weight:600; color:var(--clr-primary); margin-bottom:0.5rem;">
+              3. Which protocol encrypts data between a user's browser and a web server, and is preferred by Google for SEO?
+            </p>
+            <div class="options">
+              <label class="option-label">
+                <input type="radio" name="q3" value="ftp" /> FTP
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q3" value="http" /> HTTP
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q3" value="https" /> HTTPS
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q3" value="smtp" /> SMTP
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 4: Single radio – large images effect -->
+          <div class="question-block">
+            <p style="font-weight:600; color:var(--clr-primary); margin-bottom:0.5rem;">
+              4. What is the main SEO impact of using large, uncompressed images on a webpage?
+            </p>
+            <div class="options">
+              <label class="option-label">
+                <input type="radio" name="q4" value="rank" /> It directly improves search ranking
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q4" value="slow" /> It slows page load and hurts SEO
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q4" value="crawl" /> It improves crawlability
+              </label>
+              <label class="option-label">
+                <input type="radio" name="q4" value="none" /> It has no effect on SEO
+              </label>
+            </div>
+          </div>
+
+          <!-- Question 5: Checkboxes – select all that apply -->
+          <div class="question-block">
+            <p style="font-weight:600; color:var(--clr-primary); margin-bottom:0.5rem;">
+              5. Select ALL on-page elements that directly support both SEO and web accessibility: (choose exactly 2)
+            </p>
+            <div class="options">
+              <label class="option-label">
+                <input type="checkbox" class="q5" value="alt" /> Alt text on images
+              </label>
+              <label class="option-label">
+                <input type="checkbox" class="q5" value="responsive" /> Responsive design
+              </label>
+              <label class="option-label">
+                <input type="checkbox" class="q5" value="advert" /> Banner advertisements
+              </label>
+              <label class="option-label">
+                <input type="checkbox" class="q5" value="popup" /> Pop-up overlays
+              </label>
+            </div>
+          </div>
+
+          <!-- Action buttons – full-width on mobile, side-by-side on tablet+ -->
+          <div style="margin-top:1rem;">
+            <button type="button" class="btn btn-primary" onclick="submitQuiz()">Submit Quiz</button>
+            <button type="button" class="btn btn-secondary" onclick="resetQuiz()">Reset</button>
+          </div>
+
+        </div><!-- /.quiz-form -->
+      </div><!-- /#quiz-form card -->
+
+      <!-- Result area – populated by script.js -->
+      <div id="quiz-result" aria-live="polite"></div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        This website was created for a class project in IT 3203. &nbsp;|&nbsp;
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">IT 3203 Class Website</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

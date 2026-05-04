@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Definitions of 10 key SEO concepts every web developer should know." />
+  <title>SEO in Web Development | Key Concepts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>SEO in Web Development</h1>
+      <p class="tagline">IT 3203 Project Milestone #3 &bull; Responsive and Mobile Web Design</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu">&#9776;</button>
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="topic1.html">On-Page SEO</a>
+        <a href="topic2.html">Technical SEO</a>
+        <a href="concepts.html" class="active">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Intro -->
+      <section class="card highlight">
+        <h2>Key Concepts in SEO</h2>
+        <p>
+          The following ten concepts form the foundation of Search Engine Optimization.
+          Understanding these terms will help you design, build, and evaluate websites
+          that are discoverable, accessible, and user-friendly.
+        </p>
+      </section>
+
+      <!-- 10 concept cards -->
+      <section class="key-grid" aria-label="SEO key concept definitions">
+
+        <article class="card">
+          <h3><span class="concept-number">1</span> Keywords</h3>
+          <p>
+            Keywords are words or phrases that users type into a search engine when looking for information.
+            Effective SEO identifies the keywords most relevant to a page's topic and uses them naturally
+            in the content, headings, and metadata.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">2</span> Metadata</h3>
+          <p>
+            Metadata is data that describes a webpage without appearing as visible content.
+            The most important SEO metadata consists of the <span class="code-note">&lt;title&gt;</span> tag
+            and the <span class="code-note">meta description</span>.
+            Both appear in search result listings and influence how users decide which link to click.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">3</span> Crawlability</h3>
+          <p>
+            Crawlability describes how easily a search engine bot can navigate a website and discover its pages.
+            A site with clear navigation, no broken links, and a properly configured
+            <span class="code-note">robots.txt</span> is more crawlable.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">4</span> Indexing</h3>
+          <p>
+            After crawling a page, a search engine adds it to its index — a massive database of web pages.
+            Only indexed pages can appear in search results.
+            Using <span class="code-note">noindex</span> directives prevents specific pages from being indexed.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">5</span> Semantic HTML</h3>
+          <p>
+            Semantic HTML uses elements whose names describe their role in the document.
+            Tags like <span class="code-note">&lt;article&gt;</span>,
+            <span class="code-note">&lt;section&gt;</span>, and
+            <span class="code-note">&lt;nav&gt;</span>
+            tell both browsers and search engines what kind of content they contain,
+            improving accessibility and context.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">6</span> Page Speed</h3>
+          <p>
+            Page speed measures how quickly a webpage's content fully loads and becomes usable.
+            It is a confirmed Google ranking factor and directly affects user satisfaction.
+            Slow pages lead to higher bounce rates (users leaving before the page loads).
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">7</span> Responsive Design</h3>
+          <p>
+            Responsive design is a development approach that uses fluid grids, flexible images,
+            and CSS media queries to make a website display correctly on any screen size.
+            Because Google indexes the mobile version of sites first, responsive design is essential for SEO.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">8</span> Alt Text</h3>
+          <p>
+            Alt text (alternative text) is the text value of an image's
+            <span class="code-note">alt</span> attribute.
+            It is read aloud by screen readers for visually impaired users,
+            and it gives search engines a textual description of the image's content,
+            supporting image search rankings.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">9</span> Backlinks</h3>
+          <p>
+            A backlink is a link from one website to another.
+            Search engines treat backlinks as "votes of confidence."
+            Pages with many high-quality backlinks tend to rank higher because
+            other trusted sites have vouched for their content.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><span class="concept-number">10</span> Core Web Vitals</h3>
+          <p>
+            Core Web Vitals are Google's set of real-world, user-centered performance metrics:
+            Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS).
+            These metrics became official ranking signals in 2021, making performance directly tied to visibility.
+          </p>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        This website was created for a class project in IT 3203. &nbsp;|&nbsp;
+        <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">IT 3203 Class Website</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
